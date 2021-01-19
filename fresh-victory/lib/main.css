@@ -183,6 +183,23 @@ body {
         font-size: 150%;
     }
 }
+#about {
+    display: block;
+    padding: 60px 0;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
+    position: relative;
+    z-index: 1;
+}
+#about a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3C0E14;
+    color: #fff;
+}
+#about .grid h2 {
+    font-size: 200%;
+    letter-spacing: 1px;
+}
 #page .wrapper .slide {
     margin-top: 30px;
 }
