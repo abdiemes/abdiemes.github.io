@@ -399,6 +399,11 @@ body {
     padding: 20px 0;
     font-size: 65%;
     letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+}
+#footer .cr b {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
 
 #footer h2,

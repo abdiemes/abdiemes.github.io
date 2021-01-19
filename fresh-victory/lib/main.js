@@ -66,64 +66,6 @@ if ($('.slide').html() != undefined) {
         },
     });
 }
-if ($('#unit .owl-carousel').html() != undefined) {
-    $('#unit .owl-carousel').owlCarousel({
-        loop: true,
-        autoplay: true,
-        autoHeight: true,
-        lazyLoad: true,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true,
-        margin: 0,
-        nav: true,
-        navText: ["<i class='icon ion-ios-arrow-back'></i>", "<i class='icon ion-ios-arrow-forward'></i>"],
-        items: 2,
-        margin:20,
-        dots: false,
-        // animateOut: 'fadeOut',
-        // animateIn: 'fadeIn',
-        responsive: {
-            641: {
-                items: 4,
-            },
-            769: {
-                items: 8,
-            },
-        },
-    });
-}
-$(function() {
-  if ($('#sidebar').length) { // Ganti "#sidebar" dengan ID tertentu
-    var el = $('#sidebar');
-    var stickyTop = $('#sidebar').offset().top;
-    var stickyHeight = $('#sidebar').height();
-    $(window).scroll(function() {
-      var limit = $('#unit').offset().top - stickyHeight; // Jarak berhenti di "#footer-wrapper"
-      var windowTop = $(window).scrollTop();
-      if (stickyTop < windowTop) {
-        el.css({
-          position: 'fixed',
-          top: 20, // Jarak atau margin sticky dari atas
-          width: 300 // Jarak atau margin sticky dari atas
-        });
-      } else {
-        el.css('position', 'static');
-      }
-      if (limit < windowTop) {
-        var diff = limit - windowTop;
-        el.css({
-          top: diff
-        });
-      }
-    });
-  }
-});
-$('a').each(function() {
-    var url = $(this).attr('href');
-    if (url == window.location) {
-        $(this).addClass('current');
-    }
-});
 
 if ($('#gallery .owl-carousel').html() != undefined) {
     $('#gallery .owl-carousel').owlCarousel({
