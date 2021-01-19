@@ -94,6 +94,7 @@ body {
 }
 #header .logmen.grid .logo img {
     max-height: 100px;
+    width: fit-content;
 }
 #header .logmen.grid .menu {
     text-align: right;
