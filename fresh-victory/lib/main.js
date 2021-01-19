@@ -125,3 +125,8 @@ $('a').each(function() {
         $(this).addClass('current');
     }
 });
+$(function() {
+    var d = new Date();
+    var n = d.getFullYear();
+    document.getElementById("thisYear").innerHTML = n;
+});
