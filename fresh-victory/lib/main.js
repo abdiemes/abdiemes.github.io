@@ -120,22 +120,30 @@ $(function() {
   }
 });
 $('.slide-testi').owlCarousel({
-    loop:true,
+    loop: true,
+    rtl:true,
+    autoplay: true,
+    autoHeight: true,
+    lazyLoad: true,
+    autoplayTimeout: 6000,
+    autoplayHoverPause: true,
     margin:0,
     responsiveClass:true,
+    dots:false,
+    nav: false,
     responsive:{
         0:{
             items:1,
-            nav:true
+            // nav:false
         },
         600:{
             items:3,
-            nav:false
+            // nav:false
         },
         1000:{
             items:3,
-            nav:true,
-            loop:false
+            // nav:false,
+            // loop:false
         }
     }
 })
