@@ -394,6 +394,19 @@ body {
     background-color: #772732;
     width: 12px;
 }
+.gmaps {
+    position: relative;
+    padding-bottom: 45%;
+    height: 0;
+    overflow: hidden;
+}
+.gmaps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
 #footer {
     background: #282A2B;
     color: #8c8989;
