@@ -60,7 +60,25 @@ h6 {
     font-weight: 400;
     padding: 0;
     letter-spacing: 1px;
-    /*font-family: 'Josefin Sans', sans-serif;*/
+    font-family: 'Josefin Sans', sans-serif;
+}
+h1{
+    font-size: 1.50em;
+}
+h2{
+    font-size: 1.35em;
+}
+h3{
+    font-size: 1.20em;
+}
+h4{
+    font-size: 1.05em;
+}
+h5{
+    font-size: .90em;
+}
+h6{
+    font-size: .75em;
 }
 i.icon {
     display: inline-block;
