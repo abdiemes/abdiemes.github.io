@@ -362,7 +362,7 @@ body {
     background: #eee no-repeat center center;
     background-size: cover;
     opacity: .6;
-    transition: opacity .2s;
+    transition: opacity .5s;
 }
 #gallery .item:hover {
     opacity: 1;
