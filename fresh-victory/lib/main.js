@@ -134,6 +134,8 @@ $('.slide-testi').owlCarousel({
     responsive:{
         0:{
             items:1,
+            animateOut: 'fadeOut',
+            animateIn: 'fadeIn',
             // nav:false
         },
         600:{
