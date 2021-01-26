@@ -184,6 +184,10 @@ body {
     position: relative;
 }
 
+#cover .owl-carousel {
+    border-radius: 0px;
+}
+
 #cover .slide .item .wrapper {
     max-width: 70%;
     padding: 100px 0;
@@ -243,6 +247,7 @@ body {
     border: 2px solid #3C0E14;
     text-transform: uppercase;
     transition: transform 0.4s;
+    color: #3C0E14;
 }
 #about .btn-cstm.prime + .btn-shadow {
     background: #e0be97;
@@ -272,7 +277,7 @@ body {
     font-size: 12px;
     display: block;
     font-weight: 600;
-    color: #2e9ca1;
+    color: #3C0E14;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -306,7 +311,7 @@ body {
 #testimoni .quote {
     position: absolute;
     top: -23px;
-    color: #2e9da1;
+    color: #e0be97;
     font-size: 27px;
 }
 #testimoni .name {
@@ -466,6 +471,9 @@ body {
 #gallery h2 {
     margin-bottom: 40px;
 }
+#gallery .owl-carousel {
+    border-radius: 0px;
+}
 @media only screen and (max-width: 1068px) {
     #gallery .grid {
         font-size: 60%;
@@ -580,7 +588,9 @@ body {
     color: #B1945B;
 
 }
-#footer .links a {
+#footer .links ul,
+#footer .links ol,
+#footer .links li {
     display: block;
 }
 
