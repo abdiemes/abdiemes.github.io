@@ -159,9 +159,16 @@ $(function() {
     document.getElementById("thisYear").innerHTML = n;
 });
 
-$(document).mouseup(function(e){
+$('section').mouseup(function(e){
     var menuOn = $("#header .menu.on");
-    // Close outside menu button (mobile)
+    // Close menu out of button (mobile)
+    if(!menuOn.is(e.target) && menuOn.has(e.target).length === 0){
+        menuOn.toggleClass('on');
+    }
+});
+window.addEventListener('scroll',function(e){
+    var menuOn = $("#header .menu.on");
+    // Close menu at scroll (mobile)
     if(!menuOn.is(e.target) && menuOn.has(e.target).length === 0){
         menuOn.toggleClass('on');
     }
