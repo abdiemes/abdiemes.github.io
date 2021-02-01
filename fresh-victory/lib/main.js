@@ -173,3 +173,77 @@ window.addEventListener('scroll',function(e){
         menuOn.toggleClass('on');
     }
 });
+$(document).ready(function() {
+    /* POP ========================================================= */
+    $(document).ready(function() {
+        $('.pop').each(function() {
+            var width = $(this).attr('data-width');
+            if (width) {
+                $('.pop_wrap', this).css('width', width);
+            }
+        });
+    });
+    $(window).click(function() {
+        $('.pop').each(function() {
+            $(this).removeClass('open');
+            $('body').css('overflow', 'auto');
+
+            if ($(this).attr('id') == 'pop-iframe') {
+                $(this).find('.pop_iframe').html('');
+            }
+        });
+    });
+    $(document).on('click', '[data-pop]', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var id = $(this).attr('data-pop');
+        if ($(id).html()) {
+            $(id).addClass('open');
+            $('body').css('overflow', 'hidden');
+        } else {
+            alert(id + ' belum dibuat!');
+        }
+        if (id == '#pop-share') {
+            var href = $(this).attr('href'),
+                title = $(this).attr('title');
+            $(id + ' .pop_title').text(title);
+            $(id + ' .pop_content a[href*="_SHARELINK_"]').each(function() {
+                var replace_href = $(this).attr('href').replace('_SHARELINK_', href);
+                $(this).attr('href', replace_href);
+            });
+        }
+        if (id == '#pop-iframe') {
+            var href = $(this).attr('href'),
+                title = $(this).attr('title');
+
+            var youtube_id = href.replace('//youtu.be/', '');
+
+            $(id + ' .pop_title').text(title);
+
+            $(id + ' .pop_content .pop_iframe').html('<iframe src="//www.youtube.com/embed/' + youtube_id + '?autoplay=1&rel=0" allowfullscreen></iframe>')
+        }
+    });
+    $(document).on('click', '.pop_wrap', function(e) {
+        e.stopPropagation();
+    });
+    $(document).on('click', '.pop_close', function(e) {
+        e.stopPropagation();
+        $(this).closest('.pop').removeClass('open');
+        $('body').css('overflow', 'auto');
+
+        if ($(this).closest('.pop').attr('id') == 'pop-iframe') {
+            $(this).closest('.pop').find('.pop_iframe').html('');
+        }
+    });
+    $(document).on('click', '.pop_content a[href]', function() {
+        $(this).closest('.pop').removeClass('open');
+    });
+    /* POP ========================================================= */
+});
+
+$(document).ready(function() {
+    $('#about .item a[href*="youtu.be"]').each(function() {
+        $(this).attr('data-pop', '#pop-iframe');
+        $(this).append('<svg class="youtube_play" viewBox="0 -77 512.00213 512" xmlns="//www.w3.org/2000/svg"><path d="m501.453125 56.09375c-5.902344-21.933594-23.195313-39.222656-45.125-45.128906-40.066406-10.964844-200.332031-10.964844-200.332031-10.964844s-160.261719 0-200.328125 10.546875c-21.507813 5.902344-39.222657 23.617187-45.125 45.546875-10.542969 40.0625-10.542969 123.148438-10.542969 123.148438s0 83.503906 10.542969 123.148437c5.90625 21.929687 23.195312 39.222656 45.128906 45.128906 40.484375 10.964844 200.328125 10.964844 200.328125 10.964844s160.261719 0 200.328125-10.546875c21.933594-5.902344 39.222656-23.195312 45.128906-45.125 10.542969-40.066406 10.542969-123.148438 10.542969-123.148438s.421875-83.507812-10.546875-123.570312zm0 0" fill="#f00" filter="url(#youtube_shadow)"/><path d="m204.96875 256 133.269531-76.757812-133.269531-76.757813zm0 0" fill="#fff"/><defs><filter id="youtube_shadow" height="130%"><feGaussianBlur in="SourceAlpha" stdDeviation="3"/><feOffset dx="2" dy="2" result="offsetblur"/><feComponentTransfer><feFuncA type="linear" slope="0.4"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs></svg>');
+    });
+});
