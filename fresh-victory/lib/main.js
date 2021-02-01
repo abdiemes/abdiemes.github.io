@@ -158,3 +158,11 @@ $(function() {
     var n = d.getFullYear();
     document.getElementById("thisYear").innerHTML = n;
 });
+
+$(document).mouseup(function(e){
+    var menuOn = $("#header .menu.on");
+    // Close outside menu button (mobile)
+    if(!menuOn.is(e.target) && menuOn.has(e.target).length === 0){
+        menuOn.toggleClass('on');
+    }
+});
