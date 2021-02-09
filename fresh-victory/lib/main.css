@@ -693,9 +693,9 @@ body {
 }
 
 .pop_title_close {
-    padding: 0 15px;
+    margin: 0px 15px 0px 0px;
     position: relative;
-    transform: scale(1.8);
+    transform: scale(1.6);
     cursor: pointer;
     float: right;
     text-align: center;
