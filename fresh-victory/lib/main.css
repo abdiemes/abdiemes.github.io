@@ -337,30 +337,6 @@ figure img {
     color: #adadad;
     font-size: 14px;
 }
-#testimoni .slide-testi .owl-nav {
-    text-align: center;
-}
-#testimoni .slide-testi .owl-nav button.owl-next, 
-#testimoni .slide-testi .owl-nav button.owl-prev {
-    padding: 0 12px !important;
-}
-#testimoni .slide-testi .owl-nav button {
-    outline: none;
-    padding: 0;
-}
-#testimoni .slide-testi .owl-nav button.owl-next span, 
-#testimoni .slide-testi .owl-nav button.owl-prev span {
-    display: block;
-    font-size: 40px;
-    width: 25px;
-    height: 25px;
-    /*vertical-align: 0px;*/
-    line-height: 16px;
-}
-#testimoni .slide-testi .owl-nav button.owl-next.disabled, 
-#testimoni .slide-testi .owl-nav button.owl-prev.disabled {
-    opacity: 0.5;
-}
 #page .wrapper .slide {
     margin-top: 30px;
 }
@@ -414,7 +390,7 @@ figure img {
 #page .grid article img {
     display: block;
     border-radius: 4px;
-    margin: 20px 0;
+    margin: 20px auto;
 }
 #page .grid article ol,
 #page .grid article ul {
@@ -468,6 +444,16 @@ figure img {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.5em;
     font-weight: 600;
+}
+#page .slide-img {
+    display: grid;
+    max-width: 100%;
+}
+#page .slide-img .item img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
 }
 #unit {
     padding: 20px;

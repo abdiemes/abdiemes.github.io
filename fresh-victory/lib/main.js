@@ -52,7 +52,7 @@ if ($('.slide').html() != undefined) {
         autoplayHoverPause: true,
         margin: 0,
         nav: false,
-        navText: ["<i class='icon ion-ios-arrow-back'></i>", "<i class='icon ion-ios-arrow-forward'></i>"],
+        // navText: ["<i class='icon ion-ios-arrow-back'></i>", "<i class='icon ion-ios-arrow-forward'></i>"],
         items: 1,
         dots: false,
         animateOut: 'fadeOut',
@@ -77,7 +77,7 @@ if ($('#gallery .owl-carousel').html() != undefined) {
         autoplayHoverPause: true,
         margin: 0,
         nav: false,
-        navText: ["<i class='icon ion-ios-arrow-back'></i>", "<i class='icon ion-ios-arrow-forward'></i>"],
+        // navText: ["<i class='icon ion-ios-arrow-back'></i>", "<i class='icon ion-ios-arrow-forward'></i>"],
         items: 2,
         dots: false,
         // animateOut: 'fadeOut',
@@ -146,7 +146,19 @@ $('.slide-testi').owlCarousel({
             // loop:false
         }
     }
-})
+});
+$('#page .slide-img').owlCarousel({
+        loop: true,
+        autoplay: false,
+        autoHeight: false,
+        lazyLoad: true,
+        responsiveClass:true,
+        margin: 0,
+        nav: true,
+        navText: ["<i class='icon ion-ios-arrow-back'></i>", "<i class='icon ion-ios-arrow-forward'></i>"],
+        items: 1,
+        dots: false,
+});
 $('a').each(function() {
     var url = $(this).attr('href');
     if (url == window.location) {
