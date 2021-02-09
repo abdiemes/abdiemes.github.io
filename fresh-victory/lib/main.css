@@ -666,7 +666,7 @@ body {
     grid-template-columns: 1fr auto;
     grid-gap: 15px;*/
     font-size: 100%;
-    padding: 10px 0 6px;
+    padding: 12px 0 6px;
     border-bottom: 1px solid var(--black1);
 }
 
