@@ -8,7 +8,7 @@ $(window).on("beforeunload", function() {
 function lazyload() {
     var loadingBG = '#f2f2f2';
     $('img[data-src]').each(function() {
-        $(this).attr('style', 'display: block;max-width:100%;opacity: 0;');
+        $(this).attr('style', 'display:block;max-width:100%;opacity:0;');
         var data_img = $(this).attr('data-src');
         $(this)
             .attr('src', data_img)

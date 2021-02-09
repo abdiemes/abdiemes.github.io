@@ -19,7 +19,6 @@
     --black6: rgba(0, 0, 0, .6);
     --black8: rgba(0, 0, 0, .8);
 }
-
 .iBtn {
     display: inline-block;
     padding: 5px 15px;
@@ -28,7 +27,6 @@
     color: #B1945B;
     position: relative;
 }
-
 .iBtn:before {
     content: "";
     display: block;
@@ -44,11 +42,9 @@
     background-color: rgba(0, 0, 0, .2);
     width: 25px;
 }
-
 .iBtn:active:before {
     display: none;
 }
-
 .iBtn:after {
     content: "";
     display: block;
@@ -69,7 +65,7 @@ figure {
     position: relative;
     padding-right: 20px;
 }
-figure:before {
+figure:after {
     content: '';
     border: 2px solid #3C0E14;
     position: absolute;
@@ -81,9 +77,6 @@ figure:before {
 figure img {
     position: relative;
     z-index: 1;
-/* } dibuang
-body {
-    /*padding-top: 89px;*/
 }
 .slide {
     display: block;
