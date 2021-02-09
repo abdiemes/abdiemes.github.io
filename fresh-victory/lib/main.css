@@ -665,8 +665,9 @@ body {
     grid-template-columns: 1fr auto;
     grid-gap: 15px;*/
     font-size: 100%;
-    padding: 15px 0;
+    padding: 15px 0 8px;
     border-bottom: 1px solid var(--black1);
+    line-height: normal;
 }
 
 .pop_title {
