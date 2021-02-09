@@ -633,6 +633,7 @@ body {
     opacity: 0;
     background: none;
     transition: .1s, background .2s;
+    line-height: 1.1;
 }
 
 .pop.open {
@@ -665,9 +666,8 @@ body {
     grid-template-columns: 1fr auto;
     grid-gap: 15px;*/
     font-size: 100%;
-    padding: 15px 0 8px;
+    padding: 10px 0 6px;
     border-bottom: 1px solid var(--black1);
-    line-height: normal;
 }
 
 .pop_title {
