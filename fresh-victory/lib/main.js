@@ -150,7 +150,7 @@ $('.slide-testi').owlCarousel({
 $('#page .slide-img').owlCarousel({
         loop: true,
         autoplay: false,
-        autoHeight: false,
+        autoHeight: true,
         lazyLoad: true,
         responsiveClass:true,
         margin: 0,
@@ -158,6 +158,9 @@ $('#page .slide-img').owlCarousel({
         navText: ["<i class='icon ion-ios-arrow-back'></i>", "<i class='icon ion-ios-arrow-forward'></i>"],
         items: 1,
         dots: false,
+});
+$(window).on('load',function(){
+    $('#page div.owl-height').attr('style','height:auto');
 });
 $('a').each(function() {
     var url = $(this).attr('href');

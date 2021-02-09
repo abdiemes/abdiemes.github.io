@@ -345,7 +345,7 @@ figure img {
 	display: grid;
 	grid-template-columns: auto 300px;
 	grid-gap: 40px;
-    direction: rtl;
+    direction: ltr;
 }
 #page .grid nav.links {
     direction: ltr;
@@ -448,6 +448,10 @@ figure img {
 #page .slide-img {
     display: grid;
     max-width: 100%;
+}
+#page .slide-img.owl-carousel .owl-nav {
+    visibility: visible!important;
+    opacity: 1!important;
 }
 #page .slide-img .item img {
     display: block;
