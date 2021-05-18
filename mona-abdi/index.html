@@ -53,6 +53,7 @@
 <script async="" custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
 <script async="" custom-element="amp-lightbox-gallery" src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js"></script>
 <script async="" custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+<script async="" custom-element="amp-date-countdown" src="https://cdn.ampproject.org/v0/amp-date-countdown-0.1.js"></script>
 
 <style amp-boilerplate="">body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
 <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -64,7 +65,7 @@ div,span,h1,h2,h3,h4,h5,h6,p,blockquote,a,ol,ul,li,figcaption,textarea,input{fon
 }
 
 body {
-    font-family: PT Sans;
+    font-family: 'PT Sans', sans-serif;
     font-style: normal;
     font-weight: 300;
     color: black;
@@ -975,6 +976,68 @@ div[submit-error] {
     z-index: 2;
 }
 
+amp-date-countdown {
+    display: block;
+}
+#timecontainer {
+    background:transparent;
+    padding:10px 15px;
+    display:block;
+    max-width:800px;
+    margin:auto;
+    width:100%;
+}
+ul.timediv {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color:#444;
+}
+li.time {
+    font-family: 'PT Sans', sans-serif;
+    display:inline-block;
+    padding:10px 15px;
+    background:rgba(255, 255, 255, 0.3);
+    color:#000;
+    border-radius:5%;
+    text-transform:uppercase;
+}
+li.time span {
+    font-size: 3.5rem;
+    display: block;
+    font-weight: 600;
+}
+
+@media all and (max-width: 767px) {
+    amp-date-countdown {
+    height: auto;
+    }
+    #timecontainer {
+    padding:0;
+    }
+    li.time {
+    font-size: 1rem;
+    padding: .75rem;
+    }
+    li.time span {
+    font-size: 2rem;
+  }
+}
+
+@media all and (max-width: 320px) {
+    #timecontainer {
+    padding:0;
+    }
+    li.time {
+    font-size: .75rem;
+    padding: .75rem;
+    }
+    li.time span {
+    font-size: 1.75rem;
+  }
+}
+
 .cid-qUhRiz7icT .mbr-overlay {
     background-color: #414141;
     opacity: 0.4;
@@ -1873,7 +1936,7 @@ div[submit-error] {
 .cid-qUhTm8C53o a.nav-link button {
     background-color: unset;
     color: #fff;
-    font-family: Merriweather, serif;
+    font-family: 'Merriweather', serif;
     font-size: 16px;
     border-style: none;
     font-weight: 600;
@@ -2359,6 +2422,18 @@ div[submit-error] {
                     <div class="line"></div>
                 </div>
                 <h2 class="align-center mbr-bold mbr-section-title display-2">You are invited to our wedding!</h2>
+                <amp-date-countdown class="align-center" end-date="2021-07-11T08:00:00.000Z" locale="id" layout="responsive" height="0" width="0">
+                    <template type="amp-mustache">
+                      <div id="timecontainer">
+                        <ul class="timediv">
+                          <li class="time"><span>{{dd}}</span>Days</li>
+                          <li class="time"><span>{{hh}}</span>Hours</li>
+                          <li class="time"><span>{{mm}}</span>Mins.</li>
+                          <li class="time"><span>{{ss}}</span>Secs.</li>
+                        </ul>
+                      </div>
+                    </template>
+                </amp-date-countdown>
                 </div>
                 </div>
             </div>
