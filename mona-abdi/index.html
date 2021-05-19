@@ -37,8 +37,9 @@
 <meta name="twitter:image" content="https://abdiemes.github.io/doc/assets/cover.jpg">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <script async="" src="https://cdn.ampproject.org/v0.js"></script>
 <script async="" custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
@@ -147,6 +148,11 @@ p.mbr-section-subtitle {
     font-weight: bold;
 }
 
+.display-8 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.25rem;
+}
+
 @media (max-width: 768px) {
     .display-2 {
         font-size: 3.04rem;
@@ -177,6 +183,11 @@ p.mbr-section-subtitle {
         font-size: 1.28rem;
         font-size: calc( 1.21rem + (1.6 - 1.21) * ((100vw - 20rem) / (48 - 20)));
         line-height: calc( 1.4 * (1.21rem + (1.6 - 1.21) * ((100vw - 20rem) / (48 - 20))));
+    }
+    .display-8 {
+        font-size: 0.95rem;
+        font-size: calc( 0.95rem + (1 - 1) * ((100vw - 20rem) / (48 - 20)));
+        line-height: calc( 1.4 * (0.8rem + (1 - 1) * ((100vw - 20rem) / (48 - 20))));
     }
 }
 
@@ -1230,17 +1241,15 @@ li.time span {
     padding: 0rem;
     transition: all 0.3s;
     border-radius: 2%;
-    box-shadow: 0 calc(var(--levitate) * 1.4px) calc(var(--levitate) * 2px) calc(var(--levitate) * -1.7px) rgba(0,0,0,calc(var(--levitate) * .12));
+    box-shadow: 0 calc(var(--levitate) * .5px) calc(var(--levitate) * .6px) rgba(0,0,0,calc(var(--levitate) * .013)), 
+                0 calc(var(--levitate) * 1px) calc(var(--levitate) * 1.2px) rgba(0,0,0,calc(var(--levitate) * .013)), 
+                0 calc(var(--levitate) * 2px) calc(var(--levitate) * 2.4px) rgba(0,0,0,calc(var(--levitate) * .013)), 
+                0 calc(var(--levitate) * 4px) calc(var(--levitate) * 4.4px) rgba(0,0,0,calc(var(--levitate) * .013));
 }
 
 .cid-qUhSkCbgxU .card-wrapper:hover {
     background-color: #fdf6f1;
     border-color: #fdf6f1;
-    box-shadow: 0 calc(var(--levitate) * .5px) calc(var(--levitate) * .6px) rgba(0,0,0,calc(var(--levitate) * .013)), 
-                0 calc(var(--levitate) * 1px) calc(var(--levitate) * 1.2px) rgba(0,0,0,calc(var(--levitate) * .013)), 
-                0 calc(var(--levitate) * 2px) calc(var(--levitate) * 2.4px) rgba(0,0,0,calc(var(--levitate) * .013)), 
-                0 calc(var(--levitate) * 4px) calc(var(--levitate) * 4.4px) rgba(0,0,0,calc(var(--levitate) * .013)); 
-    transform: translateY(calc(var(--levitate) * -1.2px));
 }
 
 .cid-qUhSkCbgxU .card-wrapper amp-img {
@@ -1274,6 +1283,9 @@ li.time span {
 
 .cid-qUhSkCbgxU .mbr-text {
     color: #585858;
+    font-family: 'Merriweather', serif;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
 }
 
 .cid-qUhSsYRDOZ {
@@ -1546,6 +1558,7 @@ li.time span {
     color: #e9c4b0;
 }
 .cid-qUhSQhi6L9 .text2 {
+    display: block;
     color: #fff;
     font-size: 12px;
 }
@@ -2464,7 +2477,7 @@ li.time span {
                       </div>
                     </template>
                 </amp-date-countdown>
-                <p class="align-center mbr-section-subtitle display-5">*<i>Countdown to the wedding day</i></p>
+                <p class="align-center mbr-section-subtitle display-8">*<i>Countdown to the wedding day</i></p>
                 </div>
                 </div>
             </div>
@@ -2578,8 +2591,8 @@ li.time span {
                         <h2 class="box-title mbr-black mbr-bold display-4">Akad Nikah</h2>
                     </div>
                     <div class="card-box">
-                        <p class="mbr-text align-center display-5">
-                            Minggu, 11 Juli 2021 — 08.00 WIB
+                        <p class="mbr-text align-center">
+                            Minggu, 11 Juli 2021 | 8.00 WIB
                             <br>· · ·
                             <br>Kp. Rawa Bugel RT 002/RW 026
                             <br>Harapan Jaya, Bekasi Utara
@@ -2608,7 +2621,7 @@ li.time span {
                         <h2 class="box-title mbr-black mbr-bold display-4">Resepsi</h2>
                     </div>
                     <div class="card-box">
-                        <p class="mbr-text align-center display-5">
+                        <p class="mbr-text align-center">
                             Mulai 10.00 WIB s/d. Selesai
                             <br>· · ·
                             <br>Kp. Rawa Bugel RT 002/RW 026
@@ -2902,7 +2915,7 @@ li.time span {
     <div class="container">
         <div class="mbr-row mbr-justify-content-center">
             <div class="mbr-col-lg-12 mbr-col-md-12 align-center">
-                <h4 class="text1">Copyright ©2021 | All Rights Reserved</h4>
+                <span class="text1">Copyright ©2021 | All Rights Reserved</span>
                 <span class="text2">Modified with 💖 by <a href="https://instagram.com/abdiemes" target="_blank" rel="nofollow noopener noreferrer">@abdiemes</a></span>
             </div>
         </div>
