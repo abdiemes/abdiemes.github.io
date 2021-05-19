@@ -105,6 +105,11 @@ p {
     line-height: 1.2;
 }
 
+p.mbr-section-subtitle {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
 .mbr-text {
     font-style: normal;
     line-height: 1.5;
@@ -996,6 +1001,8 @@ ul.timediv {
 }
 li.time {
     font-family: 'PT Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.075rem;
     display:inline-block;
     padding:10px 15px;
     background:rgba(255, 255, 255, 0.3);
@@ -1017,7 +1024,7 @@ li.time span {
     padding:0;
     }
     li.time {
-    font-size: 1rem;
+    font-size: .75rem;
     padding: .75rem;
     }
     li.time span {
@@ -1030,7 +1037,7 @@ li.time span {
     padding:0;
     }
     li.time {
-    font-size: .75rem;
+    font-size: .65rem;
     padding: .75rem;
     }
     li.time span {
@@ -1210,7 +1217,7 @@ li.time span {
 .cid-qUhSkCbgxU {
     padding-top: 75px;
     padding-bottom: 45px;
-    background-color: #ffffff;
+    background-color: #fafafa;
 }
 
 .cid-qUhSkCbgxU .card {
@@ -1218,20 +1225,31 @@ li.time span {
 }
 
 .cid-qUhSkCbgxU .card-wrapper {
-    border: 1px solid #f1f1f1;
+    background-color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 0rem;
     transition: all 0.3s;
+    border-radius: 2%;
+    box-shadow: 0 calc(var(--levitate) * 1.4px) calc(var(--levitate) * 2px) calc(var(--levitate) * -1.7px) rgba(0,0,0,calc(var(--levitate) * .12));
 }
 
 .cid-qUhSkCbgxU .card-wrapper:hover {
     background-color: #fdf6f1;
     border-color: #fdf6f1;
+    box-shadow: 0 calc(var(--levitate) * .5px) calc(var(--levitate) * .6px) rgba(0,0,0,calc(var(--levitate) * .013)), 
+                0 calc(var(--levitate) * 1px) calc(var(--levitate) * 1.2px) rgba(0,0,0,calc(var(--levitate) * .013)), 
+                0 calc(var(--levitate) * 2px) calc(var(--levitate) * 2.4px) rgba(0,0,0,calc(var(--levitate) * .013)), 
+                0 calc(var(--levitate) * 4px) calc(var(--levitate) * 4.4px) rgba(0,0,0,calc(var(--levitate) * .013)); 
+    transform: translateY(calc(var(--levitate) * -1.2px));
+}
+
+.cid-qUhSkCbgxU .card-wrapper amp-img {
+    border-radius: 0 0 2% 2%;
 }
 
 .cid-qUhSkCbgxU .mbr-iconfont {
     font-size: 3rem;
     color: #e9c4b0;
-    margin-bottom: 2rem;
 }
 
 .cid-qUhSkCbgxU .box-title {
@@ -1251,6 +1269,7 @@ li.time span {
 
 .cid-qUhSkCbgxU .card-ico {
     min-width: 50px;
+    margin-bottom: 2rem;
 }
 
 .cid-qUhSkCbgxU .mbr-text {
@@ -1465,6 +1484,15 @@ li.time span {
 .cid-qUhSPeX9Oz .mbr-section-title {
     padding-bottom: 3rem;
 }
+.cid-qUhSPeX9Oz .btn {
+    margin-bottom: 2rem;
+}
+.cid-qUhSPeX9Oz .btn a {
+    color: #000;
+}
+.cid-qUhSPeX9Oz .btn:hover a {
+    color: #fff;
+}
 
 .cid-qUhSPeX9Oz .google-map {
     height: 25rem;
@@ -1516,6 +1544,10 @@ li.time span {
 
 .cid-qUhSQhi6L9 .text1 {
     color: #e9c4b0;
+}
+.cid-qUhSQhi6L9 .text2 {
+    color: #fff;
+    font-size: 12px;
 }
 
 .cid-qUhSQhi6L9 h4 {
@@ -2212,6 +2244,12 @@ li.time span {
     fill: #e9c4b0;
 }
 
+.cid-qUhXsRRMOf a > svg{
+    vertical-align: middle;
+    color: #222;
+    fill: #333;
+}
+
 .cid-qUhXsRRMOf amp-img img {
     object-fit: cover;
     height: 100%;
@@ -2266,7 +2304,8 @@ li.time span {
 </style> 
 
   </head>
-  <body class="amp-mode-mouse"><amp-sidebar id="sidebar" class="cid-qUhTm8C53o" layout="nodisplay" side="right" hidden="" role="menu" tabindex="-1">
+  <body class="amp-mode-mouse">
+    <amp-sidebar id="sidebar" class="cid-qUhTm8C53o" layout="nodisplay" side="right" hidden="" role="menu" tabindex="-1">
         <div class="builder-sidebar" id="builder-sidebar">
             <button on="tap:sidebar.close" class="close-sidebar">
                 <span></span>
@@ -2274,16 +2313,13 @@ li.time span {
             </button>
             <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
                 <li class="nav-item"><a class="nav-link link text-white display-5" href="/mona-abdi">Home</a></li>
-                <li class="nav-item"><a href="#maps1-b" class="nav-link link text-white display-5"><button on="tap:map1-b.scrollTo(duration=1000)">Tempat</button></a></li>
-                <li class="nav-item dropdown"><a class="nav-link link text-white dropdown-toggle display-5" data-toggle="dropdown-submenu" aria-expanded="false">Agenda</a>
-                    <div class="dropdown-menu">
-            <a class="text-white dropdown-item display-5" href="#">Akad</a>
-            <a class="text-white dropdown-item display-5" href="#" aria-expanded="false">Resepsi</a>
-            </div>
+                <li class="nav-item"><a href="#rundown" class="nav-link link text-white display-5"><button on="tap:rundown.scrollTo(duration=1000)">Jadwal</button></a></li>
+                <li class="nav-item"><a href="#gmaps" class="nav-link link text-white display-5"><button on="tap:gmaps.scrollTo(duration=1000)">Tempat</button></a></li>
                 </li>
             </ul>
         </div>
-    <button tabindex="-1">Close the sidebar</button></amp-sidebar>
+    <button tabindex="-1">Close the sidebar</button>
+    </amp-sidebar>
 
 <!-- Google Analytics -->
 <amp-analytics type="googleanalytics" id="analytics1">
@@ -2359,19 +2395,13 @@ li.time span {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
                 <li class="nav-item"><a class="nav-link link text-white display-5" href="/mona-abdi">Home</a></li>
-                <li class="nav-item dropdown"><a class="nav-link link text-white dropdown-toggle display-5" data-toggle="dropdown-submenu" aria-expanded="false">Agenda</a>
-                <div class="dropdown-menu">
-                <a class="text-white dropdown-item display-5" href="#">Akad</a>
-                <a class="text-white dropdown-item display-5" href="#" aria-expanded="false">Resepsi</a>
-                </div>
-                </li>
-                <li class="nav-item"><a href="#maps1-b" class="nav-link link text-white display-5"><button on="tap:map1-b.scrollTo(duration=1000)">Tempat</button></a></li>
+                <li class="nav-item"><a href="#rundown" class="nav-link link text-white display-5"><button on="tap:rundown.scrollTo(duration=1000)">Jadwal</button></a></li>
+                <li class="nav-item"><a href="#gmaps" class="nav-link link text-white display-5"><button on="tap:gmaps.scrollTo(duration=1000)">Tempat</button></a></li>
             </ul>
-        </div>
-        
+        </div>        
     </nav>
 
-    <!-- AMP plug -->
+    <!-- AMP Plug -->
     
     <button on="tap:sidebar.toggle" class="ampstart-btn hamburger sticky-but">
         <span></span>
@@ -2434,6 +2464,7 @@ li.time span {
                       </div>
                     </template>
                 </amp-date-countdown>
+                <p class="align-center mbr-section-subtitle display-5">*<i>Countdown to the wedding day</i></p>
                 </div>
                 </div>
             </div>
@@ -2529,7 +2560,7 @@ li.time span {
 
 </section>
 
-<section class="features2 cid-qUhSkCbgxU" id="features2-9">
+<section class="features2 cid-qUhSkCbgxU" id="rundown">
     
     <div class="container">
 
@@ -2539,17 +2570,20 @@ li.time span {
             </div>
 
             <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4">
-                <div class="card-wrapper">
+                <div class="card-wrapper" style="--levitate:7;">
                     <div class="title-wrapper align-center">
                         <div class="card-ico">
-                            <span class="mbr-iconfont fa-heart far"></span>
+                            <span class="mbr-iconfont">💍</span>
                         </div>
                         <h2 class="box-title mbr-black mbr-bold display-4">Akad Nikah</h2>
                     </div>
                     <div class="card-box">
                         <p class="mbr-text align-center display-5">
                             Minggu, 11 Juli 2021 — 08.00 WIB
-                            <br>Central Park, New York</p>
+                            <br>· · ·
+                            <br>Kp. Rawa Bugel RT 002/RW 026
+                            <br>Harapan Jaya, Bekasi Utara
+                        </p>
                         <amp-img src="/doc/assets/images/background3.jpg" layout="responsive" alt="Wedding Website Template" width="348" height="232">
                             <div placeholder="" class="amp-hidden">
                                 <div class="wd-tmp-spinner">
@@ -2566,18 +2600,20 @@ li.time span {
             </div>
 
             <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4">
-                <div class="card-wrapper">
+                <div class="card-wrapper" style="--levitate:7;">
                     <div class="title-wrapper align-center">
                         <div class="card-ico">
-                            <span class="mbr-iconfont fa-lemon far"></span>
+                            <span class="mbr-iconfont">🎉</span>
                         </div>
                         <h2 class="box-title mbr-black mbr-bold display-4">Resepsi</h2>
                     </div>
                     <div class="card-box">
                         <p class="mbr-text align-center display-5">
                             Mulai 10.00 WIB s/d. Selesai
-                            <br>Central Park, New York</p>
-                        
+                            <br>· · ·
+                            <br>Kp. Rawa Bugel RT 002/RW 026
+                            <br>Harapan Jaya, Bekasi Utara
+                        </p>
                         <amp-img src="/doc/assets/images/background2.jpg" layout="responsive" alt="Wedding Website Template" width="348" height="232">
                             <div placeholder="" class="amp-hidden">
                                 <div class="wd-tmp-spinner">
@@ -2688,6 +2724,37 @@ li.time span {
 
 
     <h2 class="mbr-section-title align-center mbr-bold display-2">Our Sweet Moments</h2>
+    <p class="mbr-section-subtitle align-center display-4"><span>Captured by</span>
+    <a href="https://instagram.com/fresh.victory" target="_blank" rel="nofollow noopener noreferrer">
+            <svg id="fvp-logo-new" data-name="fvp-logo-new" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 120" width="210" fill="#333">
+                <title>Fresh Victory Photography</title>
+                <path d="M102.52,26.94h17v4.33H107v7.92h10.91v4.29H107v11.6h-4.51Z"/>
+                <path d="M145.92,55.08l-6.82-10.9a9.15,9.15,0,0,0,4.53-8.87,8.47,8.47,0,0,0-6.11-7.77,14.24,14.24,0,0,0-4.24-.6h-7.9V55.08h4.51V45.3h4.5l6.33,9.79Zm-16-23.81h4.16c1.3,0,5,.65,5,4.87S135.2,41,133.9,41h-4Z"/>
+                <path d="M298.69,93.06l-6.83-10.89a9.15,9.15,0,0,0,4.53-8.87,8.48,8.48,0,0,0-6.11-7.78,14.2,14.2,0,0,0-4.24-.6h-7.9V93.06h4.51V83.28h4.5l6.33,9.78Zm-16-23.81h4.16c1.3,0,5,.66,5,4.87S288,79,286.66,79h-4Z"/>
+                <path d="M383.76,55.08l-6.82-10.9a9.15,9.15,0,0,0,4.53-8.87,8.47,8.47,0,0,0-6.11-7.77,14.24,14.24,0,0,0-4.24-.6h-7.9V55.08h4.51V45.3h4.5l6.33,9.79Zm-16-23.81h4.16a4.72,4.72,0,0,1,5,4.87c0,4.21-3.82,4.83-5.12,4.83h-4Z"/>
+                <path d="M151.2,26.94h18.62v4.33H155.71v7.49h12.57v4.33H155.71v7.66h14.65v4.33H151.2Z"/>
+                <path d="M191.29,32.66c-2.64-1.36-9.73-3.92-10.85.74-.56,2.33,1.44,3.7,3.28,4.56,2.08,1,4.4,1.6,6.28,3a8,8,0,0,1,1.24,11.47c-2.94,3.44-8.17,3.52-12.18,2.28a19.71,19.71,0,0,1-4.69-2.32l2-3.46a12.76,12.76,0,0,0,6.21,2.52c1.94.18,4.48-.35,5.49-2.22,2.69-5-5.72-6.64-8.46-8.3-3.63-2.19-5.17-6.73-2.68-10.47s7.53-4.2,11.53-3.17a23.45,23.45,0,0,1,4.55,2Z"/>
+                <path d="M221.78,26.94V55.08h-4.47v-12h-13.8v12H199V26.94h4.51V38.8h13.8V26.94Z"/>
+                <polygon points="259.29 26.94 252.21 45.43 244.8 26.94 239.44 26.94 252.01 56.39 264.57 26.94 259.29 26.94"/><path d="M269.85,26.94h4.51V55.08h-4.51Z"/>
+                <path d="M302.89,52.87a11.94,11.94,0,0,1-3.83,1.87,15.7,15.7,0,0,1-11.36-.93,13.89,13.89,0,0,1-7.31-11.29c-.38-4.76,1.2-9.74,4.94-12.84a13.39,13.39,0,0,1,13.7-2.4,21.38,21.38,0,0,1,3.4,1.67l-1.78,4.21A12.16,12.16,0,0,0,298,31.69c-7.14-2.6-12.95,2.8-12.95,9.76,0,10.39,10.1,10.08,12.72,9.12A14.39,14.39,0,0,0,301,48.85Z"/>
+                <path d="M306.86,26.94h18.77v4.33h-7.24V55.08h-4.48V31.27h-7.05Z"/>
+                <path d="M328.52,41.05a14.36,14.36,0,1,1,14.34,14.34A14.42,14.42,0,0,1,328.52,41.05Zm4.63,0c0,12.86,19.46,12.92,19.47,0S333.15,28,333.15,41.05Z"/>
+                <polygon points="404.12 26.94 397.02 40.82 389.78 26.94 384.26 26.94 394.63 45.95 394.63 55.08 399.11 55.08 399.11 45.95 409.63 26.94 404.12 26.94"/>
+                <path d="M109.84,64.92A11.44,11.44,0,0,1,117,67a8.41,8.41,0,0,1,3,6.38,10,10,0,0,1-2.6,7.43,9.6,9.6,0,0,1-7,2.45h-4v9.78H101.9V64.92Zm.62,14A4.89,4.89,0,0,0,115.55,74a4.71,4.71,0,0,0-5-4.79h-4.16V79Z"/>
+                <path d="M340.28,64.92A11.41,11.41,0,0,1,347.4,67a8.39,8.39,0,0,1,3.05,6.38,10,10,0,0,1-2.6,7.43,9.6,9.6,0,0,1-7,2.45h-4v9.78h-4.51V64.92Zm.62,14A4.89,4.89,0,0,0,346,74a4.71,4.71,0,0,0-5-4.79h-4.16V79Z"/>
+                <path d="M149.2,64.92V93.06h-4.47v-12h-13.8v12h-4.51V64.92h4.51V76.79h13.8V64.92Z"/>
+                <path d="M155.18,79a14.36,14.36,0,1,1,14.34,14.34A14.42,14.42,0,0,1,155.18,79Zm4.62,0c0,12.87,19.47,12.92,19.47,0S159.8,66,159.8,79Z"/>
+                <path d="M188,64.92h18.77v4.33h-7.24V93.06h-4.48V69.25H188Z"/>
+                <path d="M211.1,79a14.36,14.36,0,1,1,14.34,14.34A14.41,14.41,0,0,1,211.1,79Zm4.62,0c0,12.87,19.47,12.92,19.47,0S215.72,66,215.72,79Z"/>
+                <path d="M322.35,93.06h5.16L315.1,63.76h-.27l-12.41,29.3h4.39l2.71-6.61h10.24ZM311.11,82.59l3.65-8.91,3.49,8.91Z"/>
+                <path d="M379.14,64.92V93.06h-4.47v-12h-13.8v12h-4.51V64.92h4.51V76.79h13.8V64.92Z"/>
+                <polygon points="404.73 64.92 397.63 78.81 390.39 64.92 384.88 64.92 395.25 83.94 395.25 93.06 399.72 93.06 399.72 83.94 410.25 64.92 404.73 64.92"/>
+                <path d="M272.6,82.13c-1.2,6.38-6.2,11.24-13.84,11.24A14.42,14.42,0,0,1,244.42,79a14.61,14.61,0,0,1,14.34-14.42,14.31,14.31,0,0,1,9.59,3.84l-3.1,3.1a10,10,0,0,0-6.47-2.26c-4.86,0-9.73,3.23-9.73,9.74s4.87,9.66,9.73,9.67a9.36,9.36,0,0,0,9.27-6.45h-9.27V78h14A26.65,26.65,0,0,1,272.6,82.13Z"/>
+                <path d="M69.48,59.78a19.89,19.89,0,0,1-5.84,14.13L39.62,98l-24-24.09a20,20,0,0,1-5.51-17.75L30.16,76.23l9.46,9.48L57.51,67.77a11.34,11.34,0,0,0,0-16L45.3,40.06,45.24,40l.06-.06c3.08-3.26,8.45-3.43,11-.92l7.32,6.63A19.91,19.91,0,0,1,69.48,59.78Z"/>
+                <path d="M39.47,63.69l-3.09-3.13L39,58a8.72,8.72,0,0,0,0-12.29h0l-8.68,8.7-5.55-5.64L39.06,34.29A8.7,8.7,0,0,0,39,22L17,44.75a6.09,6.09,0,0,0,0,8.5L39.38,76h0A8.72,8.72,0,0,0,39.47,63.69Z"/>
+                <path d="M85.85,18.08c.24,3.5.46,21,.46,21,.12,7,.16,14,.17,21s0,14-.16,21c0,0-.21,17.46-.47,21-.25-3.5-.46-21-.46-21-.11-7-.15-14-.16-21s0-14,.17-21C85.4,39,85.62,21.58,85.85,18.08Z"/></svg>
+        </a>
+    </p>
     <br>
     <div class="mbr-row">
         <div class="mbr-col-lg-3 mbr-col-md-6 mbr-col-sm-12 ">
@@ -2748,7 +2815,8 @@ li.time span {
                 </div>
                 <h2 class="align-center mbr-white mbr-bold mbr-section-title display-2">Kirim Kado</h2>
 
-                <form class="mbr-form" method="post" target="_top" action-xhr="https://formoid.net/api/amp-form/push" data-form-title="Wedding Form" novalidate=""><input type="hidden" name="email" data-form-email="true" value="kQGMKQ+bSttMS4wW+rSnhnYyiWnccJ6XnvgFdjG4/u0KWf9rPB+wPJ79REkRE856dbc0wW+dJvGAxSGHnhp3n3BfSUQwG6k7DJ5PwlUEeTj6EMU9ujs4hmyC0GOviEl2">
+                <!--
+                    <form class="mbr-form" method="post" target="_top" action-xhr="https://formoid.net/api/amp-form/push" data-form-title="Wedding Form" novalidate=""><input type="hidden" name="email" data-form-email="true" value="kQGMKQ+bSttMS4wW+rSnhnYyiWnccJ6XnvgFdjG4/u0KWf9rPB+wPJ79REkRE856dbc0wW+dJvGAxSGHnhp3n3BfSUQwG6k7DJ5PwlUEeTj6EMU9ujs4hmyC0GOviEl2">
                     <div submit-success="">
                         <template data-form-alert="" type="amp-mustache"></template>
                     </div>
@@ -2774,6 +2842,7 @@ li.time span {
                         </div>
                     </div>
                 </form>
+                -->
             </div>
         </div>
     </div>
@@ -2797,7 +2866,7 @@ li.time span {
                 </div>
 
                 <h1 class="align-center mbr-black mbr-bold mbr-section-title display-2">Terima Kasih</h1>
-                <p class="mbr-text align-center display-4">It is an aesthetically clean and minimalist, highly professional and graphically refined and polished, very well structured and intuitively navigable, user and developer friendly, lightweight and extremely modern, search engine optimized and notoriously bold and communicative, visually stimulating responsive multi-concept Wedding AMP Template.</p>
+                <p class="mbr-text align-center display-4">Atas kehadiran dan doa restu terbaik dari para sahabat serta tamu undangan.</p>
                 
             </div>
         </div>
@@ -2805,11 +2874,14 @@ li.time span {
 
 </section>
 
-<section class="map cid-qUhSPeX9Oz" id="map1-b">
+<section class="map cid-qUhSPeX9Oz" id="gmaps">
 
     <div class="mbr-row mbr-justify-content-center">
         <div class="map-title mbr-col-sm-12 mbr-col-md-12 align-center">
             <h1 class="align-center mbr-black mbr-bold display-3">Petunjuk Arah</h1>
+        </div>
+        <div class="mbr-col-md-12 display-5 align-center">
+            Silakan klik <a class="mbr-section-btn btn btn-lg btn-primary display-5" title="Nikah Mona & Abdi" href="https://s.id/NikahMonaAbdi" target="_blank" rel="noopener nofollow"><span class="mbr-iconfont fa-location-arrow fas"></span>Google Maps</a>
         </div>
         <div class="google-map">
         <amp-iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247.89833190978138!2d106.9923913!3d-6.2143996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6dc087d6dd7ed18e!2sPecel%20Solo%20dan%20Sayur%20Matang%20Bu%20Sri%20Rezeki!5e0!3m2!1sen!2sid!4v1610538775601!5m2!1sen!2sid" height="400" layout="fixed-height" sandbox="allow-scripts allow-same-origin allow-popups" frameborder="0" class="wd-tmp-loader">
@@ -2829,8 +2901,9 @@ li.time span {
 <section class="footer1 cid-qUhSQhi6L9" id="footer1-c">
     <div class="container">
         <div class="mbr-row mbr-justify-content-center">
-            <div class="mbr-col-lg-12 mbr-col-md-12">
-                <h4 class="text1 align-center">Copyright ©2021 | All Rights Reserved</h4>
+            <div class="mbr-col-lg-12 mbr-col-md-12 align-center">
+                <h4 class="text1">Copyright ©2021 | All Rights Reserved</h4>
+                <span class="text2">Modified with 💖 by <a href="https://instagram.com/abdiemes" target="_blank" rel="nofollow noopener noreferrer">@abdiemes</a></span>
             </div>
         </div>
     </div>
