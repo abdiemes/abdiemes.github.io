@@ -1,6 +1,23 @@
+name: Minify Workflow
+on:
+  push:
+    branches: [ main ]
+
 jobs:
   build:
-    runs-on: ubuntu-latest      # Docker-based github actions have to run on a linux environment
+    runs-on: ubuntu-latest
     steps:
-      - name: HTML/CSS/JS Minifier
-        uses: docker://devatherock/minify-js:latest
+      # Checks-out your repository
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.ref }}
+
+      # Job for Minify-JS
+      - name: Web minifier
+        uses: zugazagoitia/minify-js@v0.2
+          
+      # Auto-commit to repository
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'Minify-JS : Commit Pipeline'
+          branch: ${{ github.ref }}
