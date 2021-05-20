@@ -5,16 +5,15 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest      # Docker-based github actions have to run on a linux environment
+    runs-on: ubuntu-latest
     steps:
-      - name: HTML/CSS/JS Minifier
-        uses: docker://devatherock/minify-js:latest   # To use a specific release, use a docker tag like 1.0.2 instead of latest
+      - name: Minify-JS Action
+        uses: jossydevers/minify-js@v1.0.0
         with:
-          directory: '~/mona-abdi' # Optional
-          add_suffix: false      # Optional
+          directory: 'mona-abdi/index.html'
+          add_suffix: false
 
-      # Auto-commit to repository
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: 'HTML/CSS/JS Minifier : Commit Pipeline'
+          commit_message: 'Minify-JS Action : Commit Pipeline'
           branch: ${{ github.ref }}
