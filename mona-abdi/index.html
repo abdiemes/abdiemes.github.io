@@ -780,6 +780,7 @@ html,
 body {
     height: auto;
     min-height: 100vh;
+    scroll-behavior: smooth;
 }
 
 .popover-content ul.show {
@@ -1151,7 +1152,7 @@ li.time span {
 }
 
 .cid-qUhRJ5mBf2 {
-    background-image: url("/doc/assets/images/background2.jpg");
+    background-image: url("/doc/assets/images/bg-kado.jpg");
 }
 
 .cid-qUhRJ5mBf2 .mbr-overlay {
@@ -1226,9 +1227,43 @@ li.time span {
 }
 
 .cid-qUhSkCbgxU {
-    padding-top: 75px;
-    padding-bottom: 45px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     background-color: #fafafa;
+}
+
+.cid-qUhSkCbgxU .line-wrap {
+    display: inline-block;
+    width: 100%;
+}
+
+.cid-qUhSkCbgxU .line {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cid-qUhSkCbgxU svg {
+    fill: #e9c4b0;
+}
+
+.cid-qUhSkCbgxU .mbr-section-title,
+.cid-qUhSkCbgxU .mbr-section-subtitle {
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.cid-qUhSkCbgxU .mbr-section-subtitle {
+    color: #828282;
+}
+
+.cid-qUhSkCbgxU .mbr-section-btn {
+    padding-top: 2rem;
+}
+
+.cid-qUhSkCbgxU .mbr-section-title,
+.cid-qUhSkCbgxU .line-wrap {
+    text-align: center;
 }
 
 .cid-qUhSkCbgxU .card {
@@ -1237,7 +1272,6 @@ li.time span {
 
 .cid-qUhSkCbgxU .card-wrapper {
     background-color: #fff;
-    border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 0rem;
     transition: all 0.3s;
     border-radius: 2%;
@@ -1249,7 +1283,6 @@ li.time span {
 
 .cid-qUhSkCbgxU .card-wrapper:hover {
     background-color: #fdf6f1;
-    border-color: #fdf6f1;
 }
 
 .cid-qUhSkCbgxU .card-wrapper amp-img {
@@ -1291,7 +1324,8 @@ li.time span {
 .cid-qUhSsYRDOZ {
     padding-top: 10rem;
     padding-bottom: 10rem;
-    background-image: url("/doc/assets/images/background2.jpg");
+    background-image: url("/doc/assets/images/bg-story.jpg");
+    background-position: 50% 85%;
 }
 
 .cid-qUhSsYRDOZ .mbr-overlay {
@@ -1350,7 +1384,7 @@ li.time span {
 }
 
 .cid-qUhRPAXCeS {
-    background-image: url("/doc/assets/images/background23.jpg");
+    background-image: url("/doc/assets/images/bg-kado.jpg");
 }
 
 .cid-qUhRPAXCeS .mbr-overlay {
@@ -1449,7 +1483,7 @@ li.time span {
 
 .cid-qUhSScKwIN {
     padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 0;
     background-color: #ffffff;
 }
 
@@ -1483,8 +1517,8 @@ li.time span {
 }
 
 .cid-qUhSPeX9Oz {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 5rem;
+    padding-bottom: 0;
     background-color: #ffffff;
 }
 
@@ -1519,7 +1553,7 @@ li.time span {
 
 .cid-qUhSPeX9Oz .google-map [data-state-details] {
     color: #6b6763;
-    font-family: Montserrat;
+    font-family: 'PT Sans',sans-serif;
     height: 1.5em;
     margin-top: -0.75em;
     padding-left: 1.25rem;
@@ -2225,10 +2259,11 @@ li.time span {
 .cid-qUhTm8C53o .phone-wrap {
     color: #ffffff;
 }
+
 .cid-qUhXsRRMOf {
-    padding-top: 30px;
-    padding-bottom: 45px;
-    background-color: #ffffff;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: #fdf6f1;
 }
 
 .cid-qUhXsRRMOf .container {
@@ -2326,8 +2361,8 @@ li.time span {
             </button>
             <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
                 <li class="nav-item"><a class="nav-link link text-white display-5" href="/mona-abdi">Home</a></li>
-                <li class="nav-item"><a href="#rundown" class="nav-link link text-white display-5"><button on="tap:rundown.scrollTo(duration=1000)">Jadwal</button></a></li>
-                <li class="nav-item"><a href="#gmaps" class="nav-link link text-white display-5"><button on="tap:gmaps.scrollTo(duration=1000)">Tempat</button></a></li>
+                <li class="nav-item"><a href="#rundown" class="nav-link link text-white display-5">Jadwal</a></li>
+                <li class="nav-item"><a href="#gmaps" class="nav-link link text-white display-5">Tempat</a></li>
                 </li>
             </ul>
         </div>
@@ -2392,7 +2427,7 @@ li.time span {
     <nav class="navbar navbar-dropdown  navbar-fixed-top navbar-expand-lg">
         <div class="navbar-brand">
             <a href="/mona-abdi" title="Mona &amp; Abdi Wedding" class="navbar-logo">
-                <amp-img src="/doc/assets/logo.png" layout="responsive" width="55" height="55" alt="Wedding Website Template" class="wd-tmp-loader">
+                <amp-img src="/doc/assets/logo.png" layout="responsive" width="55" height="55" alt="Wedding Invitation Website" class="wd-tmp-loader">
                     <div placeholder="" class="amp-hidden">
                         <div class="wd-tmp-spinner">
                             <em></em>
@@ -2400,7 +2435,7 @@ li.time span {
                             <em></em>
                         </div>
                     </div>
-                <noscript><img alt="Wedding Website Template" src="/doc/assets/logo.png" width="55" height="55" ></noscript>
+                <noscript><img alt="Wedding Invitation Website" src="/doc/assets/logo.png" width="55" height="55" ></noscript>
             </amp-img>
             </a>
             <h1 class="navbar-caption-wrap"><a class="navbar-caption text-white display-7" title="Mona &amp; Abdi Wedding" href="/mona-abdi">Mona &amp; Abdi Wedding</a></h1>
@@ -2408,8 +2443,8 @@ li.time span {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
                 <li class="nav-item"><a class="nav-link link text-white display-5" href="/mona-abdi">Home</a></li>
-                <li class="nav-item"><a href="#rundown" class="nav-link link text-white display-5"><button on="tap:rundown.scrollTo(duration=1000)">Jadwal</button></a></li>
-                <li class="nav-item"><a href="#gmaps" class="nav-link link text-white display-5"><button on="tap:gmaps.scrollTo(duration=1000)">Tempat</button></a></li>
+                <li class="nav-item"><a href="#rundown" class="nav-link link text-white display-5">Jadwal</a></li>
+                <li class="nav-item"><a href="#gmaps" class="nav-link link text-white display-5">Tempat</a></li>
             </ul>
         </div>        
     </nav>
@@ -2465,7 +2500,7 @@ li.time span {
                     <div class="line"></div>
                 </div>
                 <h2 class="align-center mbr-bold mbr-section-title display-2">You are invited to our wedding!</h2>
-                <amp-date-countdown class="align-center" end-date="2021-07-11T23:01:00.000+07:00" locale="id" layout="responsive" height="0" width="0">
+                <amp-date-countdown class="align-center" end-date="2021-07-11T08:00:00.000+07:00" layout="responsive" height="0" width="0">
                     <template type="amp-mustache">
                       <div id="timecontainer">
                         <ul class="timediv">
@@ -2511,7 +2546,7 @@ li.time span {
                     <span class="amp-iconfont mbr-iconfont fa-heart far"></span>
                 </div>
                 <div class="card-img img1">
-                    <amp-img src="/doc/assets/images/w-mona.jpg" layout="responsive" alt="Wedding Website Template" width="292" height="341">
+                    <amp-img src="/doc/assets/images/w-mona.jpg" layout="responsive" alt="Wedding Invitation Website" width="292" height="341">
                         <div placeholder="" class="amp-hidden">
                             <div class="wd-tmp-spinner">
                                 <em></em>
@@ -2520,11 +2555,11 @@ li.time span {
                             </div>
                         </div>
                         
-                    <noscript><img alt="Wedding Website Template" src="/doc/assets/images/abdi.jpg" width="292" height="341"></noscript>
+                    <noscript><img alt="Wedding Invitation Website" src="/doc/assets/images/abdi.jpg" width="292" height="341"></noscript>
                 </amp-img>
                 </div>
                 <div class="card-img img2">
-                    <amp-img src="/doc/assets/images/w-abdi.jpg" layout="responsive" alt="Wedding Website Template" width="292" height="341">
+                    <amp-img src="/doc/assets/images/w-abdi.jpg" layout="responsive" alt="Wedding Invitation Website" width="292" height="341">
                         <div placeholder="" class="amp-hidden">
                             <div class="wd-tmp-spinner">
                                 <em></em>
@@ -2533,7 +2568,7 @@ li.time span {
                             </div>
                         </div>
                         
-                    <noscript><img alt="Wedding Website Template" src="/doc/assets/images/mona.jpg" width="292" height="341"></noscript>
+                    <noscript><img alt="Wedding Invitation Website" src="/doc/assets/images/mona.jpg" width="292" height="341"></noscript>
                 </amp-img>
                 </div>
             </div>
@@ -2579,7 +2614,17 @@ li.time span {
 
         <div class="mbr-row mbr-justify-content-center">
             <div class="mbr-col-lg-10 mbr-col-md-10">
-                
+                <div class="line-wrap">
+                    <div class="line">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-1.004319834727255 -1.0011127187335447 203.99999999999997 24.619999999999983" width="200" height="20.62" fill="#000000">
+                            <path d="M158.49 16.27C161.09 18.14 163.91 14.19 162.59 10.29C161.28 6.26 158.02 3.46 153.59 2.68C143.99 1.02 125.06 11.55 113.04 14.8C104.11 17.21 98.63 13.67 95.67 9.73C101.74 13.99 107.26 12.48 112.93 11.4C125.96 8.92 139.4 -1.39 153.69 0.16C160.36 1.12 165.07 7.72 164.71 12.92C164.67 13.38 164.6 13.83 164.49 14.27C163.62 17.35 162.09 18.62 160.72 19C157.01 20.03 153.3 13.28 158.17 9.22C156.46 11.67 157.01 15.24 158.49 16.27Z"></path>
+                            <path d="M169.27 14.57C194.94 31.39 207.95 8.46 194.8 1.94C192.77 0.94 188.57 0.35 185.58 4.4C189.25 1.58 193.34 2.52 195.03 3.97C199.53 7.81 197.98 13.29 192.72 15.81C184.42 19.02 176.89 15.66 170.3 10.98C165.6 8.19 164.39 6.89 160.6 5.19C162.74 5.09 161.63 7.91 163.68 9.23C163.53 9.08 162.78 8.34 161.44 7.01L161.44 7.01L161.44 7.01C165.03 10.99 167.65 13.51 169.27 14.57Z"></path>
+                            <path d="M43.01 3.69C40.25 1.8 37.26 5.78 38.65 9.72C40.05 13.77 43.51 16.6 48.2 17.39C58.38 19.05 78.46 8.44 91.21 5.16C100.69 2.72 106.49 6.29 109.64 10.26C103.19 5.97 97.35 7.5 91.33 8.59C77.51 11.08 63.26 21.49 48.1 19.93C41.02 18.96 36.03 12.3 36.42 7.06C36.45 6.6 36.53 6.14 36.65 5.71C37.57 2.6 39.2 1.32 40.64 0.93C44.58 -0.11 48.51 6.7 43.35 10.79C45.16 8.32 44.58 4.72 43.01 3.69Z"></path>
+                            <path d="M32.23 6.43C5.31 -10.26 -8.35 12.5 5.45 18.96C7.57 19.96 11.98 20.54 15.12 16.52C11.27 19.32 6.98 18.39 5.21 16.95C0.48 13.15 2.11 7.71 7.64 5.2C16.35 2.01 24.24 5.35 31.15 9.99C36.09 12.75 37.36 14.05 41.34 15.74C39.08 15.84 40.25 13.03 38.1 11.73C38.26 11.87 39.04 12.61 40.46 13.93C36.68 9.98 33.94 7.48 32.23 6.43Z"></path>
+                        </svg>
+                    </div>
+                </div>
+                <h2 class="mbr-section-title align-center mbr-bold display-2">The Rundown</h2>
             </div>
 
             <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4">
@@ -2597,7 +2642,7 @@ li.time span {
                             <br>Kp. Rawa Bugel RT 002/RW 026
                             <br>Harapan Jaya, Bekasi Utara
                         </p>
-                        <amp-img src="/doc/assets/images/background3.jpg" layout="responsive" alt="Wedding Website Template" width="348" height="232">
+                        <amp-img src="/doc/assets/images/bg-akad.jpg" layout="responsive" alt="Wedding Invitation Website" width="348" height="232">
                             <div placeholder="" class="amp-hidden">
                                 <div class="wd-tmp-spinner">
                                     <em></em>
@@ -2606,7 +2651,7 @@ li.time span {
                                 </div>
                             </div>
                             
-                        <noscript><img alt="Wedding Website Template" src="/doc/assets/images/background3.jpg" width="348" height="232"></noscript>
+                        <noscript><img alt="Wedding Invitation Website" src="/doc/assets/images/bg-akad.jpg" width="348" height="232"></noscript>
                         </amp-img>
                     </div>
                 </div>
@@ -2627,7 +2672,7 @@ li.time span {
                             <br>Kp. Rawa Bugel RT 002/RW 026
                             <br>Harapan Jaya, Bekasi Utara
                         </p>
-                        <amp-img src="/doc/assets/images/background2.jpg" layout="responsive" alt="Wedding Website Template" width="348" height="232">
+                        <amp-img src="/doc/assets/images/bg-resepsi.jpg" layout="responsive" alt="Wedding Invitation Website" width="348" height="232">
                             <div placeholder="" class="amp-hidden">
                                 <div class="wd-tmp-spinner">
                                     <em></em>
@@ -2636,7 +2681,7 @@ li.time span {
                                 </div>
                             </div>
                             
-                        <noscript><img alt="Wedding Website Template" src="/doc/assets/images/background2.jpg" width="348" height="232"></noscript>
+                        <noscript><img alt="Wedding Invitation Website" src="/doc/assets/images/bg-resepsi.jpg" width="348" height="232"></noscript>
                         </amp-img>
                     </div>
                 </div>
@@ -2659,8 +2704,7 @@ li.time span {
                     <span class="amp-iconfont mbr-iconfont fa-play-circle fas"></span>
                 </div>
 
-                <h2 class="align-center mbr-white mbr-bold mbr-section-title display-3">Our Love Story
-!</h2>
+                <h2 class="align-center mbr-white mbr-bold mbr-section-title display-3">Our Love Story !</h2>
                 <p class="mbr-white mbr-text align-center display-5">60 Second Showreel</p>
             </div>
         </div>
@@ -2675,7 +2719,6 @@ li.time span {
             </div>
         </div>
     </amp-lightbox>
-
 
 </section>
 
@@ -2707,13 +2750,16 @@ li.time span {
                     dari mimpi setinggi langit biru
                 </p>
                 <p class="mbr-text text1 align-left display-4">
+                    · · ·
+                </p>
+                <p class="mbr-text text1 align-left display-4">
                     Semoga cinta selalu<br>
                     bersemayam di hatimu dan hatiku<br>
                     semoga cinta tak dianggap sia sia<br>
                     menjadi obat mujarab bagi liku luka
                 </p>
-                <p class="mbr-text text2 align-center display-4">
-                    <br>Bekasi, 2021</p>
+                <br>
+                <p class="mbr-text text2 align-center display-4">Bekasi, 2021</p>
             </div>
 
         </div>
@@ -2827,35 +2873,10 @@ li.time span {
                     </div>
                 </div>
                 <h2 class="align-center mbr-white mbr-bold mbr-section-title display-2">Kirim Kado</h2>
-
-                <!--
-                    <form class="mbr-form" method="post" target="_top" action-xhr="https://formoid.net/api/amp-form/push" data-form-title="Wedding Form" novalidate=""><input type="hidden" name="email" data-form-email="true" value="kQGMKQ+bSttMS4wW+rSnhnYyiWnccJ6XnvgFdjG4/u0KWf9rPB+wPJ79REkRE856dbc0wW+dJvGAxSGHnhp3n3BfSUQwG6k7DJ5PwlUEeTj6EMU9ujs4hmyC0GOviEl2">
-                    <div submit-success="">
-                        <template data-form-alert="" type="amp-mustache"></template>
-                    </div>
-                    <div submit-error="">
-                        <template data-form-alert="" type="amp-mustache"></template>
-                    </div>
-                    <div class="fieldset">
-                        <input type="hidden" name="form[data][0][0]" value="Name" id="form[data][1][0]-form1-7" data-form-field="">
-                        <input class="input-label" type="text" name="form[data][0][1]" data-form-field="Name" placeholder="NAME" required="" id="form[data][1][1]-form1-7">
-                        <input type="hidden" name="form[data][1][0]" value="Phone" id="form[data][2][0]-form1-7" data-form-field="">
-                        <input class="input-label small1" type="phone" name="form[data][2][0]" data-form-field="Guests" placeholder="NUMBER OF GUESTS" required="" id="form[data][2][1]-form1-7">
-                        <input class="input-label small2" type="phone" name="form[data][2][1]" data-form-field="Attend" placeholder="WHAT WILL YOU BE ATTENDING" required="" id="form[data][2][2]-form1-7">
-                        <input type="hidden" name="form[data][3][0]" value="Email" id="form[data][0][0]-form1-7" data-form-field="">
-                        <input class="input-label" type="email" name="form[data][3][1]" data-form-field="Email" placeholder="E-MAIL" required="" id="form[data][0][1]-form1-7">
-                        <label class="area">
-                            <input type="hidden" name="form[data][4][0]" value="Message" id="form[data][3][0]-form1-7" data-form-field="">
-                            <textarea name="form[data][4][1]" rows="7" data-form-field="Message" placeholder="MESSAGE" id="form[data][3][1]-form1-7"></textarea>
-                        </label>
-                    </div>
-                    <div>
-                        <div class="align-center mbr-section-btn input-group-btn">
-                            <button type="submit" class="btn btn-lg btn-primary display-6">SEND MESSAGE</button>
-                        </div>
-                    </div>
-                </form>
-                -->
+                <p class="mbr-text align-center display-5">
+                Tanpa mengurangi rasa hormat kami. Kami menerima segala bentuk tanda cinta dan kasih sayang dari sahabat-sahabat dan handai taulan.
+                <br>· · ·
+                <br>Semoga segala kebaikan senantiasa mendapatkan limpahan barokah dari Allah <i>Subhanahu wa ta'aala</i></p>
             </div>
         </div>
     </div>
@@ -2897,7 +2918,7 @@ li.time span {
             Silakan klik <a class="mbr-section-btn btn btn-lg btn-primary display-5" title="Nikah Mona & Abdi" href="https://s.id/NikahMonaAbdi" target="_blank" rel="noopener nofollow"><span class="mbr-iconfont fa-location-arrow fas"></span>Google Maps</a>
         </div>
         <div class="google-map">
-        <amp-iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247.89833190978138!2d106.9923913!3d-6.2143996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6dc087d6dd7ed18e!2sPecel%20Solo%20dan%20Sayur%20Matang%20Bu%20Sri%20Rezeki!5e0!3m2!1sen!2sid!4v1610538775601!5m2!1sen!2sid" height="400" layout="fixed-height" sandbox="allow-scripts allow-same-origin allow-popups" frameborder="0" class="wd-tmp-loader">
+        <amp-iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d495.7966606159188!2d106.992428!3d-6.214403!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6dc087d6dd7ed18e!2sPecel%20Solo%20dan%20Sayur%20Matang%20Bu%20Sri%20Rezeki!5e0!3m2!1sen!2sid!4v1621535872863!5m2!1sen!2sid" height="400" layout="fixed-height" sandbox="allow-scripts allow-same-origin allow-popups" frameborder="0" class="wd-tmp-loader">
             <div placeholder="" class="amp-hidden">
                 <div class="wd-tmp-spinner">
                     <em></em>
@@ -2906,8 +2927,7 @@ li.time span {
                 </div>
             </div>
         </amp-iframe>
-    </div>
-
+        </div>
     </div>
 </section>
 
