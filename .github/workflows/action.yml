@@ -7,13 +7,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Minify-JS Action
-        uses: jossydevers/minify-js@v1.0.0
+      - name: Minify Action
+        uses: anthonyftwang/minify-action@v1.0.1
         with:
           directory: 'mona-abdi/index.html'
-          add_suffix: false
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: 'Minify-JS Action : Commit Pipeline'
+          commit_message: 'Minify Action : Commit Pipeline'
           branch: ${{ github.ref }}
