@@ -7,12 +7,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # Checks-out your repository
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.ref }}
+
       - name: Minify Action
         uses: anthonyftwang/minify-action@v1.0.1
         with:
-          directory: 'mona-abdi/index.html'
+          directory: 'mona-abdi'
 
+      # Auto-commit to repository
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: 'Minify Action : Commit Pipeline'
+          commit_message: 'Minify source code'
           branch: ${{ github.ref }}
