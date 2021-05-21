@@ -10,7 +10,6 @@ jobs:
       # Checks-out your repository
       - uses: actions/checkout@v2
         with:
-          repository: abdiemes.github.io/mona-abdi
           path: mona-abdi
 
       - name: Minify Action
