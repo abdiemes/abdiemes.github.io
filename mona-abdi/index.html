@@ -1743,6 +1743,9 @@
   }
 
   @media all and (max-width:320px) {
+    .cid-qUhRiz7icT .gcard_text {
+      padding: 0;
+    }
     #timecontainer {
       padding: 0
     }
@@ -2387,15 +2390,15 @@
   }
 
   .cid-qUhTm8C53o amp-img {
-    width: 55px;
+    width: 40px;
     display: flex;
     align-items: center
   }
 
   @media (max-width:768px) {
     .cid-qUhTm8C53o amp-img {
-      max-height: 55px;
-      max-width: 55px
+      max-height: 40px;
+      max-width: 40px
     }
   }
 
@@ -2538,13 +2541,15 @@
   .cid-qUhTm8C53o .navbar {
     z-index: 100;
     display: flex;
+    gap: 20%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    min-height: 77px;
+    min-height: 64px;
     transition: all .3s;
-    background: #000
+    background: #000;
+    align-content: center;
   }
 
   .cid-qUhTm8C53o .navbar .navbar-logo {
@@ -2685,6 +2690,19 @@
   .cid-qUhTm8C53o .navbar-brand h1.navbar-caption-wrap {
     display: flex;
     margin-bottom: 0
+  }
+
+  .cid-qUhTm8C53o .navbar-std {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    transition: all .3s;
+    word-break: break-word;
+    z-index: 1;
+    align-content: center;
+    justify-content: center;
   }
 
   .cid-qUhTm8C53o .dropdown-item.active,
@@ -3029,7 +3047,8 @@
 
   @media (max-width:991px) {
     .cid-qUhTm8C53o .navbar {
-      padding-right: 71px
+      padding-right: 71px;
+      gap: 0;
     }
 
     .cid-qUhTm8C53o .navbar-buttons {
@@ -3038,12 +3057,6 @@
 
     .cid-qUhTm8C53o .navbar-brand {
       flex-basis: auto
-    }
-  }
-
-  @media (max-width:767px) {
-    .cid-qUhTm8C53o .navbar-brand {
-      flex-basis: 100%
     }
   }
 
@@ -3170,7 +3183,7 @@
         <li class="nav-item"><a href=#rundown class="nav-link link text-white display-5">Jadwal</a>
         <li class="nav-item"><a href=#lokasi class="nav-link link text-white display-5">Lokasi</a>
       </ul>
-    </div><button tabindex="-1">Close the sidebar</button>
+    </div><button tabindex="-1" hidden="">Close the sidebar</button>
   </amp-sidebar>
   <amp-analytics type="googleanalytics" id="analytics1">
     <script type="application/json">{
@@ -3231,6 +3244,9 @@
         </a>
         <h1 class="navbar-caption-wrap"><a class="navbar-caption text-white display-7" title="Mona &amp; Abdi Wedding"
             href="/mona-abdi">Mona &amp; Abdi Wedding</a></h1>
+      </div>
+      <div class="navbar-std">
+        <a class="text-white display-7" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NmRoM2llMzY3MWhqNGI5ajY1aTNpYjlrNjVnbWNiYjFjZGgzMGI5b2NnczY0Y2IxNm9xbTZvaG82ZyBhYmRpbGxhaHNiY0Bt&tmsrc=abdillahsbc%40gmail.com">Save The Date!</a>
       </div>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
