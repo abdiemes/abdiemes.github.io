@@ -37,6 +37,7 @@
 <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <script async="" src="https://cdn.ampproject.org/v0.js"></script>
 <script async="" custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+<script async="" custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
 <script async="" custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
 <script async="" custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
 <script async="" custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
@@ -52,6 +53,10 @@
 <style amp-boilerplate="">body{ -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both; -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both; -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both; animation: -amp-start 8s steps(1, end) 0s 1 normal both} @-webkit-keyframes -amp-start{ from{ visibility: hidden} to{ visibility: visible}} @-moz-keyframes -amp-start{ from{ visibility: hidden} to{ visibility: visible}} @-ms-keyframes -amp-start{ from{ visibility: hidden} to{ visibility: visible}} @-o-keyframes -amp-start{ from{ visibility: hidden} to{ visibility: visible}} @keyframes -amp-start{ from{ visibility: hidden} to{ visibility: visible}}</style>
 <noscript><style amp-boilerplate="">body{ -webkit-animation: none; -moz-animation: none; -ms-animation: none; animation: none} </style></noscript>
 <style amp-custom="">
+  @font-face {
+  font-family: "Product Sans";
+  src: url("https://fonts.gstatic.com/s/productsans/v7/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2") format("woff2");
+  }
   a,
   blockquote,
   div,
@@ -2136,7 +2141,7 @@
     background-color: transparent;
     border: 0;
     padding-left: 0;
-    font-family: Playfair Display;
+    font-family: 'Playfair Display',sans-serif;
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 1px
@@ -2166,6 +2171,37 @@
   .cid-qUhRPAXCeS .line-wrap,
   .cid-qUhRPAXCeS .mbr-section-title {
     color: #000
+  }
+
+  .cid-qUhRPAXCeS .kirim-kado {
+    background: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cid-qUhRPAXCeS .kirim-kado a {
+    height: auto;
+    width: 600px;
+    padding: 1rem;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .cid-qUhRPAXCeS ul {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cid-qUhRPAXCeS li {
+    list-style-type: none;
   }
 
   @media (max-width:576px) {
@@ -2694,6 +2730,7 @@
 
   .cid-qUhTm8C53o .navbar-std {
     display: flex;
+    flex-direction: column;
     flex-shrink: 0;
     align-items: center;
     margin: 0 auto;
@@ -2703,6 +2740,13 @@
     z-index: 1;
     align-content: center;
     justify-content: center;
+  }
+
+  .cid-qUhTm8C53o .navbar-std span {
+    font-family: 'Product Sans', sans-serif;
+    color: #777;
+    font-weight: 400;
+    font-size: 12px;
   }
 
   .cid-qUhTm8C53o .dropdown-item.active,
@@ -3246,7 +3290,8 @@
             href="/mona-abdi">Mona &amp; Abdi Wedding</a></h1>
       </div>
       <div class="navbar-std">
-        <a class="text-white display-7" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NmRoM2llMzY3MWhqNGI5ajY1aTNpYjlrNjVnbWNiYjFjZGgzMGI5b2NnczY0Y2IxNm9xbTZvaG82ZyBhYmRpbGxhaHNiY0Bt&tmsrc=abdillahsbc%40gmail.com#Intent;scheme=https;package=com.android.calendar;end" rel="nofollow noreferrer noopener" target="_blank" title="Save The Date">Save The Date!</a>
+        <a class="text-white display-7" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NmRoM2llMzY3MWhqNGI5ajY1aTNpYjlrNjVnbWNiYjFjZGgzMGI5b2NnczY0Y2IxNm9xbTZvaG82ZyBhYmRpbGxhaHNiY0Bt&tmsrc=abdillahsbc%40gmail.com" rel="nofollow noreferrer noopener" target="_blank" title="Save The Date">Save The Date!</a>
+        <span>via <b>google_logo</b> Calendar</span>
       </div>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
@@ -3396,14 +3441,14 @@
     <div class="container">
       <div class="mbr-row mbr-justify-content-center">
         <div class="mbr-col-lg-12 mbr-col-md-12 mbr-col-sm-12 align-center">
-          <div class="iconbox" on="tap:my-lightbox" role="button" tabindex="0"><span class="amp-iconfont mbr-iconfont fa-play-circle fas"></span></div>
+          <div class="iconbox" on="tap:yt-lightbox" role="button" tabindex="0"><span class="amp-iconfont mbr-iconfont fa-play-circle fas"></span></div>
           <h2 class="align-center mbr-white mbr-bold mbr-section-title display-3">Our Love Story !</h2>
           <p class="mbr-white mbr-text align-center display-5">60 Second Showreel</p>
         </div>
       </div>
     </div>
-    <amp-lightbox id="my-lightbox" layout="nodisplay" hidden="">
-      <div class="lightbox" on="tap:my-lightbox.close" role="button" tabindex="0">
+    <amp-lightbox id="yt-lightbox" layout="nodisplay" hidden="">
+      <div class="lightbox" on="tap:yt-lightbox.close" role="button" tabindex="0">
         <div class="container">
           <div class="video-block">
             <amp-youtube width="16" height="9" layout="responsive" data-videoid="qb1ydy3Kwjc"></amp-youtube>
@@ -3485,9 +3530,9 @@
         </div>
       </div>
     </div>
-    <amp-image-lightbox id="lightbox1" layout="nodisplay"></amp-image-lightbox>
+    <amp-image-lightbox id="galeri" layout="nodisplay"></amp-image-lightbox>
   </section>
-  <section class="form1 cid-qUhRPAXCeS mbr-fullscreen" id="form1-7">
+  <section class="kdo cid-qUhRPAXCeS mbr-fullscreen" id="kadoin">
     <div class=mbr-overlay></div>
     <div class="container">
       <div class="mbr-row mbr-justify-content-center">
@@ -3499,6 +3544,58 @@
           <p class="mbr-text align-center display-5">Tanpa mengurangi rasa hormat kami. Kami menerima segala bentuk
             tanda cinta dan kasih sayang dari sahabat-sahabat dan handai taulan.<br>· · ·<br>Semoga segala kebaikan
             senantiasa mendapatkan limpahan barokah dari Allah <i>Subhanahu wa ta'aala</i></p>
+          <div class="align-center">
+            <amp-lightbox id="gopay" layout="nodisplay">
+              <div class="kirim-kado align-center" on="tap:gopay.close" role="button" tabindex="0">
+                <a class="mbr-white mbr-bold mbr-section-title display-2" href="/docs/assets/images/mona-gopay.png" rel="nofollow noopener noreferrer" target="_blank">
+                  <amp-img src="/docs/assets/images/mona-gopay.png" layout="responsive" alt="GoPay Muna Fatin"
+                  width="600" height="600">
+                  <div placeholder="" class="amp-hidden">
+                    <div class="wd-tmp-spinner"><em></em> <em></em> <em></em></div>
+                  </div>
+                <noscript><img alt="GoPay Muna Fatin" src="/docs/assets/images/mona-gopay.png" width="600" height="600"></noscript>
+                </amp-img>
+                </a>
+              </div>
+            </amp-lightbox>
+            <amp-lightbox id="spay" layout="nodisplay">
+              <div class="kirim-kado align-center" on="tap:spay.close" role="button" tabindex="0">
+                <a class="mbr-white mbr-bold mbr-section-title display-2" href="https://shp.ee/ag76ynb?smtt=0.0.3" rel="nofollow noopener noreferrer" target="_blank">
+                  <amp-img src="/docs/assets/images/mona-spay.png" layout="responsive" alt="Wedding Invitation Website"
+                  width="600" height="600">
+                  <div placeholder="" class="amp-hidden">
+                    <div class="wd-tmp-spinner"><em></em> <em></em> <em></em></div>
+                  </div>
+                <noscript><img alt="ShopeePay Kak Pluvi" src="/docs/assets/images/mona-spay.png" width="600" height="600"></noscript>
+                </amp-img>
+                </a>
+              </div>
+            </amp-lightbox>
+            <amp-lightbox id="bca" layout="nodisplay">
+              <div class="kirim-kado align-center" on="tap:bca.close" role="button" tabindex="0">
+                <a class="mbr-white mbr-bold mbr-section-title display-2" href="/docs/assets/images/mona-bca.png" rel="nofollow noopener noreferrer" target="_blank">
+                  <amp-img src="/docs/assets/images/mona-bca.png" layout="responsive" alt="Via BCA Muna Fatin Fitriyah"
+                  width="600" height="600">
+                  <div placeholder="" class="amp-hidden">
+                    <div class="wd-tmp-spinner"><em></em> <em></em> <em></em></div>
+                  </div>
+                <noscript><img alt="Via BCA Muna Fatin Fitriyah" src="/docs/assets/images/mona-bca.png" width="600" height="600"></noscript>
+                </amp-img>
+                </a>
+              </div>
+            </amp-lightbox>
+            <amp-lightbox id="alm" layout="nodisplay">
+              <div class="kirim-kado align-center" on="tap:alm.close" role="button" tabindex="0">
+                <a class="mbr-white mbr-bold mbr-section-title display-2" href="#" target="_blank">Alamat</a>
+              </div>
+            </amp-lightbox>
+            <ul>
+              <li class="i-gopay"><button on="tap:gopay">GoPay</button></li>
+              <li class="i-spay"><button on="tap:spay">SPay</button></li>
+              <li class="i-bca"><button on="tap:bca">BCA</button></li>
+              <li class="i-alm"><button on="tap:alm">Alamat</button></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
