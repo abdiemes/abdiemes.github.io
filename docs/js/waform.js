@@ -77,8 +77,7 @@ function kirimWA(id) {
 
             var parameter = url_wa + '?phone=' + kode_area + no_wa + '&text=' +
                 _salam + ' ' + _receiver + '.%0A%0A' +
-                'Saya *' + sender + '*, mau mengucapkan *' + pesan + '*.%0A%0A' +
-                'via _' + location.href + '_';
+                'Saya *' + sender + '*, mau mengucapkan *' + pesan + '*.%0A%0A';
         }
 
         // alert(parameter);
