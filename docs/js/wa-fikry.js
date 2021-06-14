@@ -68,16 +68,14 @@ function kirimWA(id) {
         if(id === 'celebrate') {
 
     		var kode_area = 62,
-    		no_wa = 85770173363,
-    		_receiver = 'Mona dan Abdi',
-    		_salam = 'Halo. Assalamu\'alaikum';
+    		no_wa = 85600011146;
 
             var sender = $('#'+id+' .sender').val(),
             pesan = $('#'+id+' .pesan').val();
 
             var parameter = url_wa + '?phone=' + kode_area + no_wa + '&text=' +
-                _salam + ' ' + _receiver + '.%0A%0A' +
-                'Saya *' + sender + '*, mau mengucapkan *' + pesan + '*.%0A%0A';
+                pesan + '.%0A%0A%0A' +
+                'Dari *' + sender + '*.';
         }
 
         // alert(parameter);
