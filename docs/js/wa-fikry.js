@@ -5,11 +5,11 @@ window.addEventListener("load", function() {
 	    }
 	});
 
-	$('.formWA .wajib').each(function() {
+	/*$('.formWA .wajib').each(function() {
 	    title = $(this).attr('placeholder');
 	    label = $(this).parents('label');
 	    $('<span class="validasi"><b>' + title + '</b> (dibutuhkan)</span>').appendTo(label);
-	});
+	});*/
 	
 	$('.formWA .wajib').keyup(function() {
 	    if ($(this).val() != '') {
